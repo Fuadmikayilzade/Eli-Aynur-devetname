@@ -1,0 +1,6 @@
+export const hero = "/hero.jpg"
+export const columns = "/columns.jpg"
+export const venueBuilding = "/venue-building.png"
+export const curtain = "/curtain.jpg"
+export const dressCode = "/dresscode.jpg"
+export const candles = "/candles.jpg"
