@@ -56,15 +56,17 @@ export default function InviteScreen({ musicPlaying, onToggleMusic }) {
         <img src={hero} alt="Əli & Aynur" className="hero-img" />
       </section>
 
-      <div className={`scroll-hint ${showScrollHint ? '' : 'hidden'}`} aria-hidden="true">
-        <span className="scroll-hint-label">Sürüşdürün</span>
-        <div className="scroll-hint-circle">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
-            <path d="M12 3v16M12 19l-7-7M12 19l7-7" stroke="currentColor" strokeWidth="2"
-              strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+      {showScrollHint && (
+        <div className="scroll-hint" aria-hidden="true">
+          <span className="scroll-hint-label">Sürüşdürün</span>
+          <div className="scroll-hint-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+              <path d="M12 3v16M12 19l-7-7M12 19l7-7" stroke="currentColor" strokeWidth="2"
+                strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* ── COUNTDOWN ── */}
       <section className="cd-section reveal">
