@@ -261,6 +261,12 @@
 
 /* ── RSVP ─────────────────────────────────────────── */
 .rsvp-section { padding: 44px 20px 20px; }
+.rsvp-section .rsvp-title {
+  font-size: clamp(24px, 6.5vw, 30px);
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
 
 /* ── Footer ───────────────────────────────────────── */
 .footer {
