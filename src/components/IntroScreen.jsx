@@ -78,6 +78,10 @@ export default function IntroScreen({ onOpen, onFirstTap }) {
       {!loaded && stage === 'tap' && (
         <div className="intro-spinner-wrap"><div className="intro-spinner" /></div>
       )}
+
+      {loaded && stage === 'tap' && (
+        <div className="intro-hint">Açmaq üçün toxunun</div>
+      )}
     </div>
   )
 }
