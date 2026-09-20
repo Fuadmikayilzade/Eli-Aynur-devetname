@@ -59,7 +59,7 @@ export default function IntroScreen({ onOpen, onFirstTap }) {
         playsInline
         preload="auto"
         webkit-playsinline="true"
-        className={`intro-video ${stage === 'video1' ? 'active' : ''}`}
+        className={`intro-video ${stage === 'tap' || stage === 'video1' ? 'active' : ''}`}
         onEnded={handleVideo1End}
         onError={handleVideo1End}
       />
